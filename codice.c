@@ -38,15 +38,15 @@ void inserisci(int nuovo_dato, int num_dati_ord, int *vett)
 			return;
 		}
 
+	}
+
 	vett[num_dati_ord]=nuovo_dato;
 	return;
-
-	}
 }
 
 void ordina_dati(const int *dati_non_ordinati, int *dati_ordinati, int num_dati)
 {
-	for (int i = 0; i < num_dati; ++i)
+	for (int i = 0; i < num_dati; i++)
 		inserisci(dati_non_ordinati[i], i, dati_ordinati);
 }
 
